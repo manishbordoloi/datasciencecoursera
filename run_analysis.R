@@ -100,7 +100,7 @@ mergeDataFinal$participants <- as.factor(mergeDataFinal$participants)
 
 Master.dt <- data.table(mergeDataFinal)
 TidyData <- Master.dt[, lapply(.SD,mean), by = 'participants,activities']
-write.csv(TidyData, file = "./Tidy.csv", row.names = FALSE)
+write.csv(TidyData, file = "./Tidy.txt", row.names = FALSE)
 
 
         
